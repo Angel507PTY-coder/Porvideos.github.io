@@ -1,7 +1,7 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js';
 
-const SUPABASE_URL = 'https://avgzkymqdinpqphgphpt.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2Z3preW1xZGlucHFwaGdwaHB0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIwMDE5OTksImV4cCI6MjA3NzU3Nzk5OX0.WLu35eL3cIHA218eqEIZxFCUFl8qO9bdDo2Kv-rkb1g';
+const SUPABASE_URL = 'https://xbpnqxktepepbizedbpe.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhicG5xeGt0ZXBlcGJpemVkYnBlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIwMDk1MzEsImV4cCI6MjA3NzU4NTUzMX0.dUyHVMfwjeK6VyJQaJynNY6zG1SNtqcQgnUmqzhTBX4';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const uploadBtn = document.getElementById("uploadBtn");
@@ -55,4 +55,5 @@ function mostrarVideo(url) {
   videoContainer.appendChild(vid);
 }
 
+// Cargar videos al iniciar
 cargarVideos();

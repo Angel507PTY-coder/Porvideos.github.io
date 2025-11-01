@@ -44,3 +44,9 @@ video {
   border-radius: 10px;
   background: #222;
 }
+
+footer {
+  padding: 15px;
+  background: #181818;
+  color: #aaa;
+}
