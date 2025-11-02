@@ -3,28 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Por Videos</title>
+  <title>Por Videos - Plataforma Profesional de Videos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🎬 Por Videos</h1>
-    <p>Sube y mira videos del mundo entero</p>
-  </header>
-
-  <main>
-    <div class="upload-section">
-      <input type="file" id="fileInput" accept="video/*">
-      <button id="uploadBtn">Subir video</button>
-      <p id="status"></p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-icon">▶</span>
+        <span class="logo-text">Por Videos</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#explorar" class="nav-link">Explorar</a></li>
+        <li><a href="#subir" class="nav-link">Subir</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <h2>📺 Últimos videos</h2>
-    <div id="videoContainer" class="videos"></div>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1 class="hero-title">Comparte tus momentos con el mundo</h1>
+      <p class="hero-subtitle">La plataforma profesional para subir, compartir y descubrir contenido de video de alta calidad</p>
+      <div class="hero-buttons">
+        <a href="#subir" class="btn btn-primary">Comenzar ahora</a>
+        <a href="#explorar" class="btn btn-secondary">Explorar videos</a>
+      </div>
+    </div>
+    <div class="hero-decoration">
+      <div class="floating-card card-1"></div>
+      <div class="floating-card card-2"></div>
+      <div class="floating-card card-3"></div>
+    </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Por Videos — Proyecto en GitHub</p>
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">¿Por qué elegir Por Videos?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Carga Rápida</h3>
+          <p>Sube tus videos en segundos con nuestra tecnología de última generación</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Alcance Global</h3>
+          <p>Comparte tu contenido con audiencias de todo el mundo</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Seguro y Confiable</h3>
+          <p>Tus videos están protegidos con la mejor infraestructura</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Responsive</h3>
+          <p>Accede desde cualquier dispositivo, en cualquier momento</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upload Section -->
+  <section class="upload-section" id="subir">
+    <div class="container">
+      <h2 class="section-title">Sube tu video</h2>
+      <div class="upload-card">
+        <div class="upload-area" id="uploadArea">
+          <div class="upload-icon">📤</div>
+          <h3>Arrastra tu video aquí</h3>
+          <p>o haz clic para seleccionar</p>
+          <input type="file" id="fileInput" accept="video/*" class="file-input">
+          <button class="btn btn-upload" id="selectBtn">Seleccionar archivo</button>
+        </div>
+        <div class="upload-controls">
+          <button class="btn btn-primary" id="uploadBtn">
+            <span class="btn-text">Subir video</span>
+            <span class="btn-loader"></span>
+          </button>
+          <p id="status" class="status-message"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos Gallery -->
+  <section class="gallery-section" id="explorar">
+    <div class="container">
+      <h2 class="section-title">Últimos videos</h2>
+      <div id="videoContainer" class="videos-grid"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-icon">▶</span>
+            <span class="logo-text">Por Videos</span>
+          </div>
+          <p>La plataforma profesional para compartir videos</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Producto</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#explorar">Explorar</a></li>
+              <li><a href="#subir">Subir</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Compañía</h4>
+            <ul>
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Carreras</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Términos</a></li>
+              <li><a href="#">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Por Videos. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
 
   <script type="module" src="script.js"></script>
